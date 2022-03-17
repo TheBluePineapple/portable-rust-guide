@@ -5,5 +5,13 @@ A guide to creating a portable installation of rust.  This allows you to keep al
   
 1. Find a suitable USB thumbdrive
    + For our purposes you'll want decent read/write speeds
-   + And at least a few GB
-2. ## Formatting
+   + at least a few GB
+2. Configuring the USB's filesystem for Rust
+   + This step is only necessary if your target USB drive is not using the NTFS filesystem already,  it **is** necessary if you have ExFat, Fat32 or another similar filesystem
+   *  ```bat echo hello```
+
+
+
+link to vscode
+mention guy on discord
+links to sites
