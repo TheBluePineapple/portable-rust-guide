@@ -12,5 +12,5 @@ A guide to creating a portable installation of rust.  This allows you to keep al
    + in cmd type ```CONVERT D: /FS:NTFS /NOSECURITY```
 3. [Get the rust installer](https://www.rust-lang.org/tools/install)
    + WARNING: this took a very long time to install onto a flashdrive while on windows, If you are willing to sacrifice installing rust-docs [this link](https://github.com/rust-lang/rustup/issues/2444) might be helpful 
-   + Then run setup.bat **ADD LINK** to set the environment/path variables
+   + Then run [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) to set the environment/path variables
    + 
