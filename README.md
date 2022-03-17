@@ -7,5 +7,10 @@ A guide to creating a portable installation of rust.  This allows you to keep al
    + For our purposes you'll want decent read/write speeds
    + at least a few GB
 2. Configuring the USB's filesystem for Rust
-   + This step is only necessary if your target USB drive is not using the NTFS filesystem already,  it **is** necessary if you have ExFat, Fat32 or another similar filesystem
-   *  
+   + This step is only necessary if your target USB drive is not using the NTFS filesystem already,  it **is** necessary if you have [ExFat, Fat32 or another similar filesystem](https://github.com/rust-lang/rustup/issues/2680)
+   + To check what filesystem you are using, just right-click > properties
+   + in cmd type ```CONVERT D: /FS:NTFS /NOSECURITY```
+3. [Get the rust installer](https://www.rust-lang.org/tools/install)
+   + WARNING: this took a very long time to install onto a flashdrive while on windows, If you are willing to sacrifice installing rust-docs [this link](https://github.com/rust-lang/rustup/issues/2444) might be helpful 
+   + Then run setup.bat **ADD LINK** to set the environment/path variables
+   + 
