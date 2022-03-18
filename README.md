@@ -2,6 +2,7 @@ portable-rust-guide
 -------------------
   
 A guide to creating a portable installation of rust.  This allows you to keep all the files associated with the rust programming language on a normal USB drive(with a little bit of configuration), so that you can program using the language on any computer(currently only tested with windows, batch scripts provided obviously only work on 64 bit windows)  
+Feel free to edit this guide, as I only tried enough things to get it working, and I don't know if I did it the most efficient way.
   
 1. Find a suitable USB thumbdrive
    + For our purposes you'll want decent read/write speeds
@@ -11,7 +12,9 @@ A guide to creating a portable installation of rust.  This allows you to keep al
    + To check what filesystem you are using, just right-click > properties
    + in cmd type ```CONVERT D: /FS:NTFS /NOSECURITY```
 3. TODO: currently local, make portable if can (Visual Studio 2019 C++ build tools)
-4. [Get the rust installer](https://www.rust-lang.org/tools/install)
-   + WARNING: this took a very long time to install onto a flashdrive while on windows, If you are willing to sacrifice installing rust-docs [this link](https://github.com/rust-lang/rustup/issues/2444) might be helpful 
-   + Then run [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) to set the environment/path variables
-   + 
+4. Then run [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) to set the environment/path variables
+5. [Get the rust installer](https://www.rust-lang.org/tools/install)
+   + I chose custom installation(2), then only set update path variable to no
+   + You could also install a custom toolchain as well
+   + WARNING: this took a very long time to get rust on a flashdrive while on windows, If you are willing to sacrifice installing rust-docs [this link](https://github.com/rust-lang/rustup/issues/2444) might be helpful(I didn't do this step)
+6. run ```rustup --version```, if you don't see numbers, try running [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) and double check that all your environment variables are correct
