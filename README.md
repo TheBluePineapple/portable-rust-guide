@@ -14,7 +14,7 @@ ___
 3. Visual Studio 2019 C++ Build Tools
    + Get the installer [here](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
    + Run it and select *Desktop Development with C++* then click install
-   + Currently I have been unable to find a way to make this part of the process portable. if you want it to be portable as well, instead of using msvc you need to use MinGW, this means you need to choose mingw as the host triplet to install, and you need to change the mingw environment variables, I have not tried this yet, but I will update this repository later.
+   + Currently I have been unable to find a way to make this part of the process portable. if you want it to be portable as well, instead of using MSVC you need to use MinGW, this means you need to choose MinGW as the host triplet to install, and you need to change the MinGW environment variables, I have not tried this yet, but I will update this repository later.
 4. Then run [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) to set the environment/path variables
    + Make sure environment variables were set correctly
    + If you have other portable programs running along side rust, like Visual Studio Code, MinGW(if so make sure to choose _x86_64-pc-windows-gnu_ as your host triplet to install in **step 5**), git, or an X11 server.  Some of the paths for these are commented out in the [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) file, but you should make sure that they are correct before running
@@ -31,3 +31,5 @@ ___
 I've never documented anything like this before, but I was amazed at the lack of resources for it.  However there were a couple of posts that really helped get me in the right direction  
    * [This answer](https://stackoverflow.com/questions/53928194/how-do-i-get-a-portable-installation-of-the-rust-programming-language#answer-66615774) is what provided the basis for the batch file that setup the environment variables
    * Links: [portable rust installation](https://users.rust-lang.org/t/solved-portable-rust-installation/12559), [Discord server](https://discord.com/invite/rust-lang-community)
+
+### Note: This repository is incomplete, if you follow the steps you will get a portable installation of the rust programming language, but I have not finished testing and documenting different cases, for example using MinGW instead of MSVC.  If you have any corrections, questions, or use a different method, please make a pull request.
