@@ -12,7 +12,7 @@ ___
    + Check what filesystem it's using: right-click the drive > properties
    + In Command Prompt enter ```CONVERT D: /FS:NTFS /NOSECURITY```
 3. Visual Studio 2019 C++ Build Tools
-   + **TODO: MAKE PORTABLE**, or alternatively **mingw**
+   + Currently I have been unable to find a way to make this part of the process portable. if you want it to be portable as well, instead of using msvc you need to use MinGW, this means you need to choose mingw as the host triplet to install, and you need to change the mingw environment variables, I have not tried this yet, but I will update this repository later.
    + Get the installer [here](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
    + Run it and select *Desktop Development with C++* then click install
 4. Then run [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) to set the environment/path variables
