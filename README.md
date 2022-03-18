@@ -11,14 +11,15 @@ Feel free to edit this guide, as I only tried enough things to get it working, a
    + This step is only necessary if your target USB drive is not using the NTFS filesystem already,  it **is** necessary if you have [ExFat, Fat32 or another similar filesystem](https://github.com/rust-lang/rustup/issues/2680)
    + To check what filesystem you are using, just right-click > properties
    + in cmd type ```CONVERT D: /FS:NTFS /NOSECURITY```
-3. TODO: currently local, make portable if can (Visual Studio 2019 C++ build tools)
+3. Visual Studio 2019 C++ Build Tools
+   + Get the installer [here](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
+   + Run it and select *Desktop Development with C++* then click install
 4. Then run [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) to set the environment/path variables
    + Make sure environment variables were set correctly
-   + This file can be edited if you have other portable programs running along side rust, like Visual Studio Code, MinGW(if so make sure to choose _x86_64-pc-windows-gnu_ as your host triplet to install in **step 5**), git an X11 server.  Some of the paths for these are commented out in the [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) file, but you should make sure that they are correct before running
+   + If you have other portable programs running along side rust, like Visual Studio Code, MinGW(if so make sure to choose _x86_64-pc-windows-gnu_ as your host triplet to install in **step 5**), git, or an X11 server.  Some of the paths for these are commented out in the [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) file, but you should make sure that they are correct before running
 5. [Get the rust installer](https://www.rust-lang.org/tools/install)
-   + I chose custom installation(2), then only set update path variable to no
+   + I chose custom installation(option 2), then set update path variable to no
    + You could also install a custom toolchain as well
    + WARNING: this took a very long time to get rust on a flashdrive while on windows, If you are willing to sacrifice installing rust-docs [this link](https://github.com/rust-lang/rustup/issues/2444) might be helpful(I didn't do this step)
 6. run ```rustup --version```
    + if you don't see numbers, try running [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) and double check that all your environment variables are correct
-   + 
