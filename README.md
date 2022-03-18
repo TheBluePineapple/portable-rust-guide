@@ -1,16 +1,16 @@
-portable-rust-guide
--------------------
+# Portable Rust Guide
   
+## Summary
 A guide to creating a portable installation of rust.  This allows you to keep all the files associated with the rust programming language on a normal USB drive(with a little bit of configuration), so that you can program using the language on any computer(currently only tested with windows, batch scripts provided obviously only work on 64 bit windows)  
 Feel free to edit this guide, as I only tried enough things to get it working, and I don't know if I did it the most efficient way.
-  
-1. Find a suitable USB thumbdrive
+___
+## Instructions
+1. Find a suitable USB flashdrive
    + For our purposes you'll want decent read/write speeds
-   + at least a few GB
 2. Configuring the USB's filesystem for Rust
    + This step is only necessary if your target USB drive is not using the NTFS filesystem already,  it **is** necessary if you have [ExFat, Fat32 or another similar filesystem](https://github.com/rust-lang/rustup/issues/2680)
-   + To check what filesystem you are using, just right-click > properties
-   + in cmd type ```CONVERT D: /FS:NTFS /NOSECURITY```
+   + Check what filesystem it's using: right-click the drive > properties
+   + In Command Prompt enter ```CONVERT D: /FS:NTFS /NOSECURITY```
 3. Visual Studio 2019 C++ Build Tools
    + Get the installer [here](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
    + Run it and select *Desktop Development with C++* then click install
@@ -23,3 +23,10 @@ Feel free to edit this guide, as I only tried enough things to get it working, a
    + WARNING: this took a very long time to get rust on a flashdrive while on windows, If you are willing to sacrifice installing rust-docs [this link](https://github.com/rust-lang/rustup/issues/2444) might be helpful(I didn't do this step)
 6. run ```rustup --version```
    + if you don't see numbers, try running [setup.bat](https://github.com/TheBluePineapple/portable-rust-guide/blob/main/setup.bat) and double check that all your environment variables are correct
+
+
+
+## Credits
+I've never documented anything like this before, but I was amazed at the lack of resources for it.  However there were a couple of posts that really helped get me in the right direction  
+   * [This answer](https://stackoverflow.com/questions/53928194/how-do-i-get-a-portable-installation-of-the-rust-programming-language#answer-66615774) is what provided the basis for the batch file that setup the environment variables
+   * Links: [portable rust installation](https://users.rust-lang.org/t/solved-portable-rust-installation/12559), [Discord server](https://discord.com/invite/rust-lang-community)
