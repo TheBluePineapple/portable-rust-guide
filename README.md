@@ -1,7 +1,7 @@
 # Portable Rust Guide
   
 ## Summary
-A guide to creating a portable installation of rust.  This allows you to keep all the files associated with the rust programming language on a normal USB drive(with a little bit of configuration), so that you can program using the language on any computer(currently only tested with windows, batch scripts provided obviously only work on 64 bit windows)  
+A guide to creating a portable installation of rust.  This allows you to keep all the files associated with the rust programming language on a normal USB drive(with a little bit of configuration), so that you can program using the language on any computer(currently only tested with windows
 Feel free to edit this guide, as I only tried enough things to get it working, and I don't know if I did it the most efficient way.
 ___
 ## Instructions
